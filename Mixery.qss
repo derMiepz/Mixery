@@ -462,6 +462,8 @@ QComboBox::down-arrow:editable {
 QLineEdit, QTextEdit, QPlainTextEdit {
     background-color: rgb(33,44,61); /* blueGrey */
     border: none;
+	border-radius: 3px;
+	margin-right: 2px;
     padding-left: 2px;
 }
 
