@@ -75,7 +75,7 @@ OBSTheme {
 OBSTheme::disabled {
     text: rgb(160,160,160); /* moreLighter */
     buttonText: rgb(200,199,200); /* lighter */
-    brightText: rgb(200,199,200); /* lighter */ 
+    brightText: rgb(200,199,200); /* lighter */
 }
 
 OBSTheme::inactive {
@@ -745,3 +745,13 @@ QLabel#errorLabel {
     qproperty-displayBackgroundColor: #171e2a;
 }
 
+
+OBSBasicSettings {
+    qproperty-generalIcon: url(./Mixery/settings/general.svg);
+    qproperty-streamIcon: url(./Mixery/settings/stream.svg);
+    qproperty-outputIcon: url(./Mixery/settings/output.svg);
+    qproperty-audioIcon: url(./Mixery/settings/audio.svg);
+    qproperty-videoIcon: url(./Mixery/settings/video.svg);
+    qproperty-hotkeysIcon: url(./Mixery/settings/hotkeys.svg);
+    qproperty-advancedIcon: url(./Mixery/settings/advanced.svg);
+}
