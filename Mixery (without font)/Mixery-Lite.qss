@@ -4,7 +4,7 @@
 /* It contains code snippets from the themes "Acri" made by @Warchamp7        */
 /* and "Rachni" made by @Fenrir. Those themes are also shipped with OBS.      */
 /*                                                                            */
-/* Mixery-Light created by eZ_KrieG3R aka. Fabi                                     */
+/* Mixery-Light created by eZ_KrieG3R aka. Fabi                               */
 /*                                                                            */
 /******************************************************************************/
 
@@ -677,6 +677,17 @@ QStatusBar::item {
     border: none;
 }
 
+/* Table View */
+
+QTableView {
+    gridline-color: rgb(31,186,237); /* mixerBlue */
+}
+
+QHeaderView::section {
+    background-color: rgb(20,27,38); /* darkerBlueGrey */
+    color: rgb(225,224,225); /* veryLight */
+    border: 1px solid rgb(162,161,162); /* light */
+}
 
 /* Mute CheckBox */
 
