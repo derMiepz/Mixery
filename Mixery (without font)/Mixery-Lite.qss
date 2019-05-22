@@ -91,8 +91,6 @@ QWidget {
     color: rgb(225,224,225); /* veryLight */
     selection-background-color: rgb(31,186,237); /* mixerBlue */
     selection-color: white;
-    font: regular "Comfortaa";
-    font-weight: bold;
 }
 
 * [frameShape="1"], * [frameShape="2"], * [frameShape="3"], * [frameShape="4"], * [frameShape="5"], * [frameShape="6"] {
@@ -201,7 +199,6 @@ QDockWidget {
 	background: rgb(20,27,38); /* darkerBlueGrey */
 	border: none;
 	font-size: 14px;
-	font-weight: bold;
 }
 
 QDockWidget::title {
