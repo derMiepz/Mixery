@@ -756,8 +756,8 @@ QLabel#errorLabel {
 
 /* Preview Background color */
 
-* [themeID="displayBackgroundColor"] {
-    qproperty-displayBackgroundColor: #171e2a;
+OBSQTDisplay {
+	qproperty-displayBackgroundColor: #171e2a;
 }
 
 
@@ -769,4 +769,42 @@ OBSBasicSettings {
     qproperty-videoIcon: url(./Mixery/settings/video.svg);
     qproperty-hotkeysIcon: url(./Mixery/settings/hotkeys.svg);
     qproperty-advancedIcon: url(./Mixery/settings/advanced.svg);
+}
+
+/* Locked CheckBox */
+
+LockedCheckBox {
+    outline: none;
+    background: transparent;
+}
+
+LockedCheckBox::indicator:checked {
+    image: url(./Mixery/locked.svg);
+}
+
+LockedCheckBox::indicator:unchecked {
+    image: url(:res/images/unlocked.svg);
+}
+
+/* Visibilty CheckBox */
+
+VisibilityCheckBox {
+    outline: none;
+    background: transparent;
+}
+
+VisibilityCheckBox::indicator:checked {
+    image: url(./Mixery/visible.svg);
+}
+
+VisibilityCheckBox::indicator:unchecked {
+    image: url(:res/images/invisible.svg);
+}
+
+* [themeID="trashIcon"] {
+    qproperty-icon: url(./Mixery/trash.svg);
+}
+
+* [themeID="revertIcon"] {
+    qproperty-icon: url(./Mixery/revert.svg);
 }
