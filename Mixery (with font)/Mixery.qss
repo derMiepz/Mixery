@@ -68,8 +68,8 @@ OBSTheme {
     highlight: rgb(31,186,237); /* mixerBlue */
     highlightText: rgb(0,0,0);
 
-    link: rgb(114, 162, 255); /* OBS blue */
-    linkVisited: rgb(114, 162, 255); /* OBS blue */
+    link: rgb(31,186,237); /* mixerBlue */
+    linkVisited: rgb(33,44,61); /* blueGrey */
 }
 
 OBSTheme::disabled {
