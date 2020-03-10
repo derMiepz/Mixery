@@ -204,8 +204,7 @@ QDockWidget {
 
 QDockWidget::title {
 	border-bottom: 2px solid #1fbaed;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-bottom: 1px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	text-align: left;
@@ -582,10 +581,7 @@ QSlider::groove:horizontal {
 }
 
 QSlider::handle:horizontal {
-    background-color: QLinearGradient(x1: 0, y1: 0, x2: 0, y2: 1,
-        stop: 0 rgb(200,199,200), /* lighter */
-        stop: 0.25 rgb(200,199,200),
-        stop: 1 rgb(162,161,162)); /* light */
+    background-color: rgb(200,199,200); /* lighter */
     border: 1px solid rgb(20,27,38); /* darkerBlueGrey */
     border-radius: 3px;
     height: 10px;
@@ -594,10 +590,7 @@ QSlider::handle:horizontal {
 }
 
 QSlider::handle:horizontal:pressed {
-    background-color: QLinearGradient(x1: 0, y1: 1, x2: 0, y2: 0,
-        stop: 0 rgb(240,239,240), /* lighter */
-        stop: 0.25 rgb(200,199,200),
-        stop: 1 rgb(162,161,162)); /* light */
+    background-color: rgb(160,160,160); /* moreLighter */
 }
 
 QSlider::sub-page:horizontal {
@@ -606,9 +599,7 @@ QSlider::sub-page:horizontal {
 }
 
 QSlider::sub-page:horizontal:disabled {
-    background-color: QLinearGradient(x1: 0, y1: 1, x2: 0, y2: 0,
-        stop: 0 rgb(33,44,61), /* blueGrey */
-        stop: 0.75 rgb(50,59,50)); /* grey */
+    background-color: rgb(20,27,38); /* darkerBlueGrey */
     border-radius: 2px;
 }
 
@@ -620,10 +611,7 @@ QSlider::groove:vertical {
 }
 
 QSlider::handle:vertical {
-    background-color: QLinearGradient(x1: 1, y1: 0, x2: 0, y2: 0,
-        stop: 0 rgb(240,239,240), /* lighter */
-        stop: 0.25 rgb(200,199,200),
-        stop: 1 rgb(162,161,162)); /* light */
+    background-color: rgb(200,199,200); /* lighter */
     border: 1px solid rgb(20,27,38); /* darkerBlueGrey */
     border-radius: 3px;
     width: 10px;
@@ -632,10 +620,7 @@ QSlider::handle:vertical {
 }
 
 QSlider::handle:vertical:pressed {
-    background-color: QLinearGradient(x1: 1, y1: 0, x2: 0, y2: 0,
-        stop: 0 rgb(240,239,240), /* lighter */
-        stop: 0.25 rgb(200,199,200),
-        stop: 1 rgb(162,161,162)); /* light */
+    background-color: rgb(160,160,160); /* moreLighter */
 }
 
 QSlider::add-page:vertical {
@@ -644,9 +629,7 @@ QSlider::add-page:vertical {
 }
 
 QSlider::add-page:vertical:disabled {
-    background-color: QLinearGradient(x1: 1, y1: 0, x2: 0, y2: 0,
-        stop: 0 rgb(33,44,61), /* blueGrey */
-        stop: 0.75 rgb(50,59,50)); /* grey */
+    background-color: rgb(20,27,38); /* darkerBlueGrey */
     border-radius: 2px;
 }
 
@@ -824,4 +807,64 @@ VisibilityCheckBox::indicator:unchecked {
 
 * [themeID="revertIcon"] {
     qproperty-icon: url(./Mixery/revert.svg);
+}
+
+/* Source Icons */
+
+OBSBasic {
+    qproperty-imageIcon: url(./Mixery/sources/image.svg);
+    qproperty-colorIcon: url(./Mixery/sources/brush.svg);
+    qproperty-slideshowIcon: url(./Mixery/sources/slideshow.svg);
+    qproperty-audioInputIcon: url(./Mixery/sources/microphone.svg);
+    qproperty-audioOutputIcon: url(./Mixery/settings/audio.svg);
+    qproperty-desktopCapIcon: url(./Mixery/settings/video.svg);
+    qproperty-windowCapIcon: url(./Mixery/sources/window.svg);
+    qproperty-gameCapIcon: url(./Mixery/sources/gamepad.svg);
+    qproperty-cameraIcon: url(./Mixery/sources/camera.svg);
+    qproperty-textIcon: url(./Mixery/sources/text.svg);
+    qproperty-mediaIcon: url(./Mixery/sources/media.svg);
+    qproperty-browserIcon: url(./Mixery/sources/globe.svg);
+    qproperty-groupIcon: url(./Mixery/sources/group.svg);
+    qproperty-sceneIcon: url(./Mixery/sources/scene.svg);
+    qproperty-defaultIcon: url(./Mixery/sources/default.svg);
+}
+
+/* Scene Tree */
+
+SceneTree {
+    qproperty-gridItemWidth: 150;
+	qproperty-gridItemHeight: 27;
+}
+
+*[gridMode="true"] SceneTree::item {
+    color: rgb(225,224,225); /* veryLight */
+    background-color: rgb(23,30,42); /* darkBlueGrey */
+    border: none;
+    border-radius: 3px;
+    padding: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 1px;
+}
+
+*[gridMode="true"] SceneTree::item:selected {
+    background-color: rgb(31,186,237); /* mixerBlue */
+}
+
+*[gridMode="true"] SceneTree::item:hover {
+    background-color: rgba(31,186,237,100); /* mixerBlue */
+}
+
+*[gridMode="true"] SceneTree::item:pressed {
+    background-color: rgb(23,30,42); /* darkBlueGrey */
+}
+
+*[gridMode="true"] SceneTree::item:checked {
+    background-color: rgb(31,186,237); /* mixerBlue */
+}
+
+/* Save icon */
+
+* [themeID="replayIconSmall"] {
+    qproperty-icon: url(./Mixery/save.svg);
 }
