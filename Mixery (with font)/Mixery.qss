@@ -196,6 +196,11 @@ QListWidget::item:hover:!active {
 /* Dock Widget */
 
 QDockWidget {
+	titlebar-close-icon: url('./Mixery/Close.svg');
+	titlebar-normal-icon: url('./Mixery/Popout.svg');
+}
+
+QDockWidget {
 	background: rgb(20,27,38); /* darkerBlueGrey */
 	border: none;
 	font-size: 14px;
@@ -217,7 +222,7 @@ QDockWidget::title {
 
 QDockWidget::close-button,
 QDockWidget::float-button {
-	icon-size: 30px;
+	icon-size: 12px;
 	subcontrol-position: bottom right;
 	subcontrol-origin: padding;
 	background: transparent;
