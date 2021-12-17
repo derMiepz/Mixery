@@ -869,3 +869,29 @@ SceneTree {
 * [themeID="replayIconSmall"] {
     qproperty-icon: url(./Mixery-Lite/save.svg);
 }
+
+/* Media icons */
+
+* [themeID="playIcon"] {
+    qproperty-icon: url(./Mixery-Lite/media/media_play.svg);
+}
+
+* [themeID="pauseIcon"] {
+    qproperty-icon: url(./Mixery-Lite/media/media_pause.svg);
+}
+
+* [themeID="restartIcon"] {
+    qproperty-icon: url(./Mixery-Lite/media/media_restart.svg);
+}
+
+* [themeID="stopIcon"] {
+    qproperty-icon: url(./Mixery-Lite/media/media_stop.svg);
+}
+
+* [themeID="nextIcon"] {
+    qproperty-icon: url(./Mixery-Lite/media/media_next.svg);
+}
+
+* [themeID="previousIcon"] {
+    qproperty-icon: url(./Mixery-Lite/media/media_previous.svg);
+}
